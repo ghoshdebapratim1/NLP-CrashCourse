@@ -87,7 +87,7 @@ def generate_text():
   #session['data'] = {'generated_text': output['generated_text']}
 
   print(session)
-  #print(output[0]['generated_text'])
+  print(output[0]['generated_text'])
   session.modified = True
   return redirect(url_for('results'))
 
