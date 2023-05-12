@@ -51,10 +51,10 @@ Finish the two functions below to complete the website's backend.
 def generate_text():
   prompt = request.form['prompt']
   parameters = {
-    'temperature': 1,
+    'temperature': request.form['temp'],
     'num_return_sequences': 1,
     'top_k': 50,
-    'max_new_tokens': 250,
+    'max_new_tokens': request.form['length'],
   }
   generated_text = model.query({
     "inputs": prompt,
