@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Shakespeare Bot</title>
+        <title>Bardify</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -36,8 +36,8 @@
             <div class="container px-4 px-lg-5 text-center">
                 <br>
                 <br>
-                <h1 class="mb-1 text-primary">THE MODEL</h1>
-                <h3 class="mb-5 text-dark"><em>ShakespeareAI 'Coriolanus Edition' awaits you below.</em></h3>
+                <h1 class="mb-1 text-primary">THE SONNETEER</h1>
+                <h3 class="mb-5 text-dark"><em>Unleash the power of Bardify to create your very own Shakespearean sonnet.</em></h3>
             </div>
         </header>
         <!-- About-->
@@ -45,8 +45,8 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-5">
-                        <h2 class="text-light">Test out our model here!</h2>
-                        <p class="lead mb-5"><strong>Submit a prompt for ShakespeareAI to work with below, and the results will appear on the right!</strong></p>
+                        <h2 class="text-light">Let the Sonnets Begin!</h2>
+                        <p class="text-light lead mb-5"><strong> Enter your prompt and let The Sonneteer weave its magic. The results will appear on the bottom, where you can read, share, and be inspired by the beauty of language.</strong></p>
                         <form action="{{url_for('generate_text')}}" method="POST" source="custom" name="form-1" >
                           <div class="form-group">
                             <textarea class="form-control-lg" rows="4" cols="50" placeholder="Write your prompt here..." required="" id="text_gen_input" name="prompt"></textarea>
@@ -61,7 +61,7 @@
                       <h2 class="text-light">Results:</h2>
                       <ul id="generated_ul">
                       <p>
-                        {{ generated }}
+                        {{ generated}}
                         </p>
                       <!-- generated items will be here. -->
                       </ul>
@@ -83,7 +83,7 @@
                         <a class="social-link rounded-circle text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; LyricBot AI Camp Team (mitch cutts) 2022 </p>
+                <p class="text-muted small mb-0">Copyright &copy; Bardify AI Camp Team 2023 </p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
